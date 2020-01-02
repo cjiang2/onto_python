@@ -207,6 +207,14 @@
     <!-- http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#MaterialPartition -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#MaterialPartition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#Glass"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#Plastic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#Partition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -300,6 +308,41 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#Partition"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#GlassBottle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#GlassBottle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#GlassBottle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#PlasticBottle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#PlasticBottle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#PlasticBottle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#PlasticBottle2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#PlasticBottle2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zone/ontologies/2019/11/object_onto#PlasticBottle"/>
+    </owl:NamedIndividual>
     
 
 
